@@ -4,6 +4,7 @@ import Home from '../components/Home.vue'
 import About from '../components/About.vue'
 import Contact from '../components/Contact.vue'
 import Blog from '../components/Blog.vue'
+import RightSidebar from '../components/RightSidebar.vue'
 
 const routes = [
     {
@@ -21,9 +22,17 @@ const routes = [
         component: Contact,
         name: 'contact'
     },
+    // {
+    //     path: '/blog',
+    //     component: Blog,
+    //     name: 'blog'
+    // }
     {
         path: '/blog',
-        component: Blog,
+        components:{
+            default: Blog,
+            right: RightSidebar
+        },
         name: 'blog'
     }
 ]
