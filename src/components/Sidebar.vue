@@ -5,10 +5,19 @@
 <template>
     <section class="mt-[40px] text-white p-5">
         <ul class="flex flex-col space-y-5">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Blog</li>
+            <li>
+                <router-link to="/">Home</router-link>
+            </li>
+            <li>
+                <!-- <RouterLink to="/about">About</RouterLink> -->
+                <router-link to="/about">About</router-link>
+            </li>
+            <li>
+                <router-link to="/contact">Contact</router-link>
+            </li>
+            <li>
+                <router-link to="/blog">Blog</router-link>
+            </li>
         </ul>
     </section>
 </template>
