@@ -34,6 +34,14 @@ const routes = [
             right: RightSidebar
         },
         name: 'blog'
+    },
+    {
+        path: '/blog/tag/:tag',
+        components:{
+            default: Blog,
+            right: RightSidebar
+        },
+        name: 'tag'
     }
 ]
 

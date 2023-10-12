@@ -1,8 +1,16 @@
 <script setup>
+import {ref} from 'vue'
+import {useRoute} from 'vue-router'
+const route = useRoute()
+
+const tag = ref(route.params.tag)
 
 </script>
  
 <template>
+    <div class="my-5">
+        {{ tag }}
+    </div>
     <article class="mb-10">
         <h1 class="text-xl mb-2">Hello World Post</h1>
         <p>
