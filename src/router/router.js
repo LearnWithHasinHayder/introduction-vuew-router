@@ -8,19 +8,23 @@ import Blog from '../components/Blog.vue'
 const routes = [
     {
         path: '/',
-        component: Home
+        component: Home,
+        name: 'home'
     },
     {
         path: '/about',
-        component: About
+        component: About,
+        name: 'about'
     },
     {
         path: '/contact',
-        component: Contact
+        component: Contact,
+        name: 'contact'
     },
     {
         path: '/blog',
-        component: Blog
+        component: Blog,
+        name: 'blog'
     }
 ]
 
